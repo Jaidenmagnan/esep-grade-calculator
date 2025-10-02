@@ -94,5 +94,9 @@ func computeAverage(grades []Grade) int {
 		sum += grade.Grade
 	}
 
+	if len(grades) == 0 {
+		return 0
+	}
+
 	return sum / len(grades)
 }
